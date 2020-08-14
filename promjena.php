@@ -2,8 +2,7 @@
 require_once 'konfiguracija.php';
 
 if(isset($_POST['naziv'])){
-
-
+    //elog($_POST);
 $izraz=$veza->prepare('update riba set
 naziv=:naziv,
 pocetaklovostaja=:pocetaklovostaja,
@@ -14,12 +13,12 @@ $izraz->execute($_POST);
 header('location: privatno.php');
 }
 
+
 if(isset($_GET['sifra'])){
 $izraz=$veza->prepare('select * from riba where sifra=:sifra');
 $izraz->execute($_GET);
-$smjer=$izraz->fetch();
+$riba=$izraz->fetch();
 }
-
 
 ?>
 <!doctype html>
@@ -34,7 +33,7 @@ $smjer=$izraz->fetch();
 <body>
 
 <form class="callout" method="POST">
-<h2>Dodavanje ribe</h2>
+<h2>Promjena</h2>
 <div class="floated-label-wrapper">
 <label for="naziv">Naziv ribe</label>
 <input type="text" id="naziv" name="naziv" value="<?php echo $riba->naziv ?>">
@@ -54,7 +53,6 @@ $smjer=$izraz->fetch();
 <input type="hidden" name="sifra" value="<?php echo $riba->sifra ?>">
 <input class="button expanded" type="submit" value="Promjeni ribu">
 </form>
-
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>
