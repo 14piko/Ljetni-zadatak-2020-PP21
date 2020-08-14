@@ -1,6 +1,7 @@
 # Ljetni-zadatak-2020-PP21
 
 Realizirane točke:
+
 1.Za razvoj aplikacije se koristio Foundation RWD framework
 
 2.Aplikacija ima javni i privatni dio
