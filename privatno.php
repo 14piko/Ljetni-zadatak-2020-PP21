@@ -15,20 +15,21 @@ header('location: index.php');
 <title>Ribička udruga</title>
 <link rel="stylesheet" href="assets/css/foundation.css">
 <link rel="stylesheet" href="assets/css/tablica.css">
+<link rel="stylesheet" href="assets/css/piko.css">
 </head>
 <body>
-
+<div class="piko">
 <div class="grid-container">
 <div class="grid-x grid-padding-x">
 <div class="large-12 cell">
 <div class="grid-x grid-padding-x">
 <div class="large-6 cell">
-Riba
+<h1 style="color:red;font-family:Times New Roman;font-style:italic;">Riba</h1>
 </div>
 <div class="large-6 cell">
-<a href="logout.php">Logout</a>
+<a style="color:cyan;float:right;" href="logout.php">Logout</a>
 </div>
-<div><a href="https://github.com/14piko/Ljetni-zadatak-2020-PP21/blob/master/LjetnizadatakERAdijagram.JPG">ERA dijagram link!</a></div>
+<div><a style="color:lime;" href="https://github.com/14piko/Ljetni-zadatak-2020-PP21/blob/master/LjetnizadatakERAdijagram.JPG">ERA dijagram link!</a></div>
 </div>
 
 <?php

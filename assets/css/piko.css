@@ -1,0 +1,14 @@
+.piko {
+  
+    background-image: url("../../img/a2.jpg");
+  
+    
+    min-height: 1024px;
+    min-width: 100%;
+  
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
