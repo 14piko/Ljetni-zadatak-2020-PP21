@@ -28,7 +28,7 @@ Riba
 <div class="large-6 cell">
 <a href="logout.php">Logout</a>
 </div>
-<div><a href="https://gofile.io/d/k7iarA">ERA dijagram link!</a></div>
+<div><a href="https://github.com/14piko/Ljetni-zadatak-2020-PP21/blob/master/LjetnizadatakERAdijagram.JPG">ERA dijagram link!</a></div>
 </div>
 
 <?php

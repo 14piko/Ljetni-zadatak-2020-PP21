@@ -9,24 +9,23 @@ require_once 'konfiguracija.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ribička udruga</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 <body>
     
-  <form class="callout text-center" action="autoriziraj.php" method="POST">
-    <h2>Ribička udruga</h2>
-    <div class="floated-label-wrapper">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email">
-    </div>
-    <div class="floated-label-wrapper">
-      <label for="pass">Password</label>
-      <input type="password" id="pass" name="password" placeholder="Password">
-    </div>
-    <input class="button expanded" type="submit" value="Prijavite se">
-  </form>
+<div class="bg-img">
+  <form action="autoriziraj.php" class="container" method="POST">
+    <h1 style="font-family:Times New Roman;font-style:italic;">Ribička udruga</h1>
 
- <div><a href="https://github.com/14piko/">Github link!</a></div>
-  <?php
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Unesite Email" name="email" required>
+
+    <label for="pass"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Unesite Password" name="password" required>
+
+    <button type="submit" class="btn">Prijavite se!</button>
+    <a href="https://github.com/14piko/Ljetni-zadatak-2020-PP21">Github link!</a>
+  <div><?php
 
     $p=isset($_GET['p']) ? (int)$_GET['p'] : 0;
 
@@ -47,9 +46,10 @@ require_once 'konfiguracija.php';
     
   
   ?>
-  
-  
+  </div>
+  </form>
 
+  
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>
