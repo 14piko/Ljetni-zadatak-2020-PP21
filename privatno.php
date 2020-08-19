@@ -29,7 +29,7 @@ header('location: index.php');
 <div class="large-6 cell">
 <a style="color:cyan;float:right;" href="logout.php">Logout</a>
 </div>
-<div><a style="color:lime;" href="https://github.com/14piko/Ljetni-zadatak-2020-PP21/blob/master/LjetnizadatakERAdijagram.JPG">ERA dijagram link!</a></div>
+<a style="color:lime" target="blank" href="../../img/era.JPG">ERA dijagram!</a>
 </div>
 
 <?php

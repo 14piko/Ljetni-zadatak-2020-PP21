@@ -13,11 +13,14 @@ if(trim($_POST['email'])==='' || trim($_POST['password'])===''){
 }
 
 
-if($_POST['email']!=='mirko.eres1@gmail.com' && $_POST['lozinka']!=='mirko'){
-    if($_POST['email']!=='edunova@edunova.hr' && $_POST['lozinka']!=='e'){
+if($_POST['email']!=='mirko.eres1@gmail.com' && $_POST['email']!=='edunova@edunova.hr'){
     header('location: index.php?p=3');
     exit;
 }
+
+if($_POST['password']!=='mirko' && $_POST['password']!=='e'){
+    header('location: index.php?p=3');
+    exit;
 }
 
 

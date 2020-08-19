@@ -18,13 +18,15 @@ require_once 'konfiguracija.php';
     <h1 style="font-family:Times New Roman;font-style:italic;">Ribička udruga</h1>
 
     <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Unesite Email" name="email" required>
+    <input type="email" placeholder="Unesite Email" name="email" id="email" required>
 
-    <label for="pass"><b>Password</b></label>
-    <input type="password" id="password" placeholder="Unesite Password" name="password" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Unesite Password" name="password" id="password" required>
 
     <button type="submit" class="btn">Prijavite se!</button>
-    <a href="https://github.com/14piko/Ljetni-zadatak-2020-PP21">Github link!</a>
+    <p>Username:edunova@edunova.hr Password:e</p>
+  
+    <a target="blank" href="https://github.com/14piko/Ljetni-zadatak-2020-PP21">Github link!</a>
   <div><?php
 
     $p=isset($_GET['p']) ? (int)$_GET['p'] : 0;

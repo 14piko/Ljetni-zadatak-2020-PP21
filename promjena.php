@@ -1,6 +1,11 @@
 <?php
 require_once 'konfiguracija.php';
 
+if(!isset($_SESSION['autoriziran'])){
+    header('location: index.php');
+    exit;
+    }
+
 if(isset($_POST['naziv'])){
     //elog($_POST);
 $izraz=$veza->prepare('update riba set
